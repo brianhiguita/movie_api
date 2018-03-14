@@ -30,14 +30,14 @@ app.get("/results", function(req, res){
 
 // FOR LOCAL USE
 
-// app.listen(3000, function(){
-//   console.log("server has started");
-// });
+app.listen(3000, function(){
+  console.log("server has started");
+});
 
 
 
 // FOR HEROKU
 
-app.listen(app.get('port'), function() {
-  console.log('app is running on', app.get('port'))
-});
+// app.listen(app.get('port'), function() {
+//   console.log('app is running on', app.get('port'))
+// });

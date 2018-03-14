@@ -1,4 +1,4 @@
-Application can be accessed at https://brianhiguitamovieapi.herokuapp.com/
+Application can be accessed at https://bhvmovieapi.herokuapp.com/
 
 If you would like to download the application and use it locally:
 
