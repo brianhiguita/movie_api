@@ -1,11 +1,21 @@
 <% include partials/header %>
 
-<h1>search for a movie</h1>
 
-<form action="/results" method="get">
-  <input type="text" placeholder="title" name="search">
-  <input type="submit">
 
-</form>
+<div class="container-fluid">
+  <div class="row justify-content-center">
+    <h1>Search For Movie Or Tv Show</h1>
+    <div class="search">
+      <form action="/results" method="get">
+        <input class="form-control custom-input" type="text" placeholder="Title of show or movie" name="search">
+        <input class="custom-button form-control btn btn-danger btn-lg" type="submit">
+      </form>
+    </div>
+
+
+  </div>
+
+</div>
+
 
 <% include partials/footer %>

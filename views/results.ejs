@@ -1,33 +1,34 @@
 <% include partials/header %>
+<div class="container">
+  <div class="jumbotron">
+    <h1 class="display-4"><%= data['Title'] %></h1>
+    <p class="lead"><%= data['Actors'] %></p>
+    <hr class="my-4">
+    <div class="row">
+      <div class="col-lg-4">
+          <img class="img-thumbnail" src="<%= data['Poster']%>" alt="">
+      </div>
+      <div class="col-lg-6">
+        <p class="lead"><strong>Genre </strong></p>
+        <p><%= data['Genre'] %></p>
 
-<div class="jumbotron">
-  <h1 class="display-4"><%= data['Title'] %></h1>
-  <p class="lead"><%= data['Actors'] %></p>
-  <hr class="my-4">
-  <div class="row">
-    <div class="col-lg-4">
-        <img class="img-thumbnail" src="<%= data['Poster']%>" alt="">
+        <p class="lead"><strong>Plot </strong></p>
+        <p><%= data['Plot'] %></p>
+
+        <p class="lead"><strong>Director </strong></p>
+        <p><%= data['Director'] %></p>
+
+        <p class="lead"><strong>IMDB Rating </strong></p>
+        <p><%= data['imdbRating'] %></p>
+
+        <p class="lead">
+            <a class="btn btn-primary btn-lg" href="/" role="button">Return To Search</a>
+        </p>
+
+      </div>
     </div>
-    <div class="col-lg-6">
-      <p class="lead"><strong>Genre </strong></p>
-      <p><%= data['Genre'] %></p>
 
-      <p class="lead"><strong>Plot </strong></p>
-      <p><%= data['Plot'] %></p>
-
-      <p class="lead"><strong>Director </strong></p>
-      <p><%= data['Director'] %></p>
-
-      <p class="lead"><strong>IMDB Rating </strong></p>
-      <p><%= data['imdbRating'] %></p>
-
-      <p class="lead">
-          <a class="btn btn-primary btn-lg" href="/" role="button">Return To Search</a>
-      </p>
-
-    </div>
   </div>
-
 </div>
 
 
