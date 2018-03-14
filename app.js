@@ -16,6 +16,8 @@ app.get("/results", function(req, res){
   var query = req.query.search
   var url = "http://www.omdbapi.com/?apikey=3cfe2a5f&&t=" + query;
 
+
+
   request(url, function(error, response, body){
     if (!error && response.statusCode == 200) {
       var data = JSON.parse(body)
@@ -26,7 +28,15 @@ app.get("/results", function(req, res){
 
 
 
-
-app.listen(app.get('port'), function() {
-  console.log('app is running on', app.get('port'))
+// FOR LOCAL USE 
+app.listen(3000, function(){
+  console.log("server has started");
 });
+
+
+
+// FOR HEROKU
+
+// app.listen(app.get('port'), function() {
+//   console.log('app is running on', app.get('port'))
+// });
